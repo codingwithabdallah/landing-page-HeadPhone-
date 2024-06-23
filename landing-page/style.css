@@ -1,0 +1,151 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Nunito",sans-serif;
+}
+.container{
+    height: 100vh;
+    padding: 30px 70px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+.logo {
+    color:rgb(29, 29, 29);
+    font-size: 25px;
+    font-weight: bold;
+}
+.list a{
+    color: black;
+    margin: 0 20px;
+    transition: 0.7s ease;
+}
+.list a:hover{
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    transform: scale(-3px);
+}
+header .list .contact {
+    /* border: 1px solid #333; */
+    background: #333;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    transition: 0.3s ease;
+}
+header .list .contact:hover{
+    background: #1f1f1f;
+    transform: scale(9px);
+}
+
+
+
+.main-section {
+    height: 100%;
+    width: 100%;
+    padding: 70px 70px;
+    display: flex; /* Enable flexbox layout */
+    flex-direction: row; /* Arrange items in reverse order (image on right) */
+    align-items: flex-start; /* Align items vertically to the top */
+  }
+  
+  .content {
+    width: 50%;
+  }
+  
+  .main-section img {
+    width: 50%;
+    flex: 1; /* Allow image to shrink/grow with available space */
+  }
+  
+  .content h3 {
+    font-size: 70px;
+  }
+  
+  .content h3::after {
+    content: "";
+    position: absolute;
+    background: rgb(23, 125, 165);
+    height: 3px;
+    width: 130px;
+    top: 44%;
+    left: 15%;
+  }
+  
+  .content p {
+    padding: 25px 0;
+    margin-top: 25px;
+  }
+  
+  .content button {
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    background: rgba(23, 125, 165, 0.701);
+    transition: 0.7s ease;
+  }
+  .content button:hover{
+    cursor: pointer;
+    background: transparent;
+    transform: scale(-3px);
+    color: rgba(23, 125, 165, 0.701);
+  }
+
+
+
+
+  footer{
+    margin: 80px 0 0 0;
+    background: #333;
+    padding: 50px 50px;
+    color: white;
+  }
+  footer .foot-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+footer .card{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 60px;
+  }
+.card a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 0;
+}
+.card p{
+    color: rgb(41, 100, 177);
+    font-size: 23px;
+    font-weight: bold;
+    padding: 5px 0;
+
+}
+
+
+
+
+
+footer .cpy {
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+footer .cpy span{
+    font-weight: bold;
+    color: rgba(23, 125, 165, 0.701);
+}
